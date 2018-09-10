@@ -1,4 +1,4 @@
-#include<cstdio>
+//#include<cstdio>
 #include<cstring>
 #include<iostream>
 #include<cctype>
@@ -125,7 +125,6 @@ int guestsignup()
         else
             success=1;
     }
-    
 
     printf("请您输入您的姓名\n");
     scanf("%s",name);
@@ -193,44 +192,40 @@ int guestsignup()
     }
     
     success=1;
-    while(success){
-    
-	printf("请输入您的邮箱：\n"); 
-	scanf("%s",email);
-	int z=0,b=0,c=0,e=0,f=0,g=0;
-	    
-	    while(email[a]!='\0')
-		{
-			if (email[a]=='@')
-	        {
-	            b=1;
-	            c=a;//读取出'@'字符所在的位置 
-	            break;//检验输入的邮箱里是否有'@' 
-	        }
-	        else
-	        a++;
-		}
-		
-		while(email[e]!='\0')
-		{
-			if (email[e]=='.')
-	        {
-	            f=1;
-	            g=e;//读取出'.'字符所在的位置 
-	            break;//检验输入的邮箱里是否有'.'
-	        }
-	        else
-	        e++;
-		}
-		
-		if(b==1&&f==1&&g>(c+1)){
-		printf("您的邮箱已创建成功！\n");
-		success=0;//测试其是否有'@'和'.'，同时'.'是否在'@' 的一位之后 
-		}else{
-			printf("您输入的邮箱有误！\n");
-		}
-		
-		}
+    while(success)
+    {
+        printf("请输入您的邮箱：\n"); 
+        scanf("%s",email);
+        int z=0,b=0,c=0,e=0,f=0,g=0;
+
+        while(email[a]!='\0')
+        {
+            if (email[a]=='@')
+            {
+                b=1;
+                c=a;//读取出'@'字符所在的位置 
+                break;//检验输入的邮箱里是否有'@' 
+            }
+            else a++;
+        }
+        while(email[e]!='\0')
+        {
+            if (email[e]=='.')
+            {
+                f=1;
+                g=e;//读取出'.'字符所在的位置 
+                break;//检验输入的邮箱里是否有'.'
+            }
+            else e++;
+        }
+            
+        if(b==1&&f==1&&g>(c+1)){
+        printf("您的邮箱已创建成功！\n");
+        success=0;//测试其是否有'@'和'.'，同时'.'是否在'@' 的一位之后 
+        }else
+        {
+            printf("您输入的邮箱有误！\n");
+        }	
 	}
     printf("注册成功!赠送您1000RMB\n");
     fprintf(customerInformation,"%s %s %s %s %s %s %s %.2f\n",customerID1,name,gender,phone,filecustomerPassword,email,district,1000.00);//写入文件 
