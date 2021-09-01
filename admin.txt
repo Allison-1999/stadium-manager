@@ -1,0 +1,3 @@
+adminid name 保密 18888888888 123456 liuzekuan@bupt.edu.cn A
+liuzekuan lzk 男 13001000717 000717 liuzekuan@bupt.edu.cn B
+123456 zjk 男 11111111111 123456 123456789@163.com C

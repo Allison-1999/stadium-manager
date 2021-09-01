@@ -1,0 +1,3 @@
+liuzekuan lzk 男 18 13001000717 000717 liuzekuan@bupt.edu.cn A 2000.00 0
+testid name 女 20 13333333333 111111 123@qq.com A 1000.00 1
+123456 wjj 女 10 11111111111 123456 666@gmail.com B 800.00 0
